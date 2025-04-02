@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/FemIcono.png" type="image/x-icon">
+    <title>Interfem | Internet a tu alcance</title>
+    <meta name="description" content="Ofrecemos servicios de internet inalámbrico y por fibra óptica con alta velocidad y estabilidad. Conéctate sin interrupciones y disfruta de la mejor experiencia online. Descubre nuestros planes para hogares y empresas.">
+    <meta name="keywords" content="internet inalámbrico, internet por fibra óptica, conexión rápida, internet para empresas, internet para hogares, planes de internet, fibra óptica confiable, internet de alta velocidad, proveedores de internet, conectividad Wi-Fi">
+    <meta name="author" content="Interfem">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--ÍCONOS -->
+    <script src="https://kit.fontawesome.com/6368fe8576.js" crossorigin="anonymous"></script>
+    <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+</head>
+<body>
+
+
+
+
+
+    <!-- PRELOADER -->
+    <div class="loading" id="onload">
+        <img src="img/loading2.svg" alt="">
+        <h1>Cargando...</h1>
+    </div>
+
+
+
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img class="no-select" src="img/LogoV1.png" alt="">
+        </a>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" style="--i:1;">Inicio</a>
+            <div class="dropdown">
+                <a href="#" style="--i:2;" class="dropdown-btn">Servicios <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="ser_residencial.html">Residencial</a>
+                    <a href="ser_empresarial.html">Empresarial</a>
+                </div>
+            </div>
+            <a href="paquetes.html" style="--i:3;" >Paquetes</a>
+            <a href="cobertura.html" style="--i:4;" >Cobertura</a>
+            <a href="empresa.html" style="--i:5;" >Nosotros</a>
+            <a href="contacto.html" style="--i:6;" >Contactanos</a>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61572740991261" style="--i:1;" ><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/2383742128" style="--i:2;" ><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.speedtest.net/es" style="--i:3;" ><i class="fa-solid fa-gauge"></i></a>   
+        </div>
+        <!-- Ícono de menú hamburguesa -->
+        <div class="menu-toggle" id="mobile-menu">
+            <a><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </header>
+
+
+
+
+
+    <!-- HERO --> 
+    <section class="parallax-1">
+        <div class="content">
+            <main class="main">
+                <section class="section banner banner-section">
+                    <div class="container banner-column">
+                        <div class="banner-inner">
+                            <h5 class="heading-xl">Conectamos hogares,<br> potenciamos empresas</h5>
+                            <p class="paragraph">Trabaja, estudia y disfruta sin límites. En Interfem, te ofrecemos internet rápido, confiable y seguro para lo que más importa.</p>
+                        </div>
+                        <img class="banner-image no-select" src="img/parallax.png" alt="banner"  loading="lazy">
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-- CARROUSEL ANUNCIOS-->
+    <div class="carousel-container" id="conoce-mas" >
+        <div class="carousel">
+            <div class="carousel-item"><img src="img/Anuncio-1.webp" alt="Anuncio 1"  loading="lazy" ></div>
+            <div class="carousel-item"><img src="img/Anuncio-2.webp" alt="Anuncio 2"  loading="lazy" ></div>
+            <div class="carousel-item"><img src="img/Anuncio-3.webp" alt="Anuncio 3"  loading="lazy" ></div>
+            <div class="carousel-item"><img src="img/Anuncio-4.webp" alt="Anuncio 3"  loading="lazy" ></div>
+            <div class="carousel-item"><img src="img/Anuncio-5.webp" alt="Anuncio 3"  loading="lazy" ></div>
+            <div class="carousel-item"><img src="img/Anuncio-6.webp" alt="Anuncio 3"  loading="lazy" ></div>
+            <div class="carousel-item"><img src="img/Anuncio-7.webp" alt="Anuncio 3"  loading="lazy" ></div>
+        </div>
+      
+      <!-- Botones para mover manualmente -->
+        <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+
+
+
+
+    <!-- CARDS -->
+    <div class="separador-diagonal">
+        <div id="paquetes-internet">
+            <h2>PAQUETES DE INTERNET</h2>
+
+            <div class="buttons">
+                <button class="tab-btn"><h3><i class="fa-sharp fa-solid fa-satellite-dish"></i> INALAMBRICO</h3></button>
+            </div>
+            <div class="paquetes">
+                <!-- Paquetes de Antena -->
+                <div class="paquete antena">
+                    <div class="card-wrap">
+                        <div class="card-front">
+                            <div class="card-header one">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="card-content">
+                                <h1 class="card-title">Plan Básico</h1>
+                                <p class="card-text">Ideal para navegación ligera y redes sociales. Perfecto para zonas sin fibra.</p> <br>
+                                <button class="card-btn one" onclick="voltearCard(this)">Ver más</button>
+                           </div>
+                        </div>
+                        <div class="card-back one">
+                            <div class="card-content">
+                            <h3>Plan <br><i>Básico</i></h3>
+                            <div class="price">$250.00 MXN</div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 8 Mbps (Descarga)</li>
+                                <li><i class="fa-solid fa-check"></i> 3 Mbps (Subida)</li>
+                                <li><i class="fa-solid fa-check"></i> Internet Ilimitado</li>
+                                <li><i class="fa-solid fa-check"></i> Soporte Técnico</li>
+                            </ul>
+                            <!-- Botón para abrir el popup -->
+                            <button class="btn-contratar" onclick="abrirPopupProductoCarrier()">CONTRATAR AHORA</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paquete antena">
+                    <div class="card-wrap">
+                        <div class="card-front">
+                            <div class="card-header two">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <h1 class="card-title">Plan Intermedio</h1>
+                                <p class="card-text">Velocidad para streaming en HD y videollamadas. Ideal para hogares pequeños.</p>
+                                <button class="card-btn two" onclick="voltearCard(this)">Ver más</button>
+                           </div>
+                        </div>
+                        <div class="card-back two">
+                            <div class="card-content">
+                            <h3>Plan <br><i>Intermedio</i></h3>
+                            <div class="price">$300.00 MXN</div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 15 Mbps (Descarga)</li>
+                                <li><i class="fa-solid fa-check"></i> 5 Mbps (Subida)</li>
+                                <li><i class="fa-solid fa-check"></i> Internet Ilimitado</li>
+                                <li><i class="fa-solid fa-check"></i> Soporte Técnico</li>
+                            </ul>
+                            <!-- Botón para abrir el popup -->
+                            <button class="btn-contratar" onclick="abrirPopupProductoCarrier()">CONTRATAR AHORA</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paquete antena">
+                    <div class="card-wrap">
+                        <div class="card-front">
+                            <div class="card-header three">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="card-content">
+                                <h1 class="card-title">Plan Experto</h1>
+                                <p class="card-text">Conexión para múltiples dispositivos. Perfecto para streaming y gaming casual.</p>
+                                <button class="card-btn three" onclick="voltearCard(this)">Ver más</button>
+                           </div>
+                        </div>
+                        <div class="card-back three">
+                            <div class="card-content">
+                            <h3>Plan <br><i>Experto</i></h3>
+                            <div class="price">$400.00 MXN</div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 30 Mbps (Descarga)</li>
+                                <li><i class="fa-solid fa-check"></i> 10 Mbps (Subida)</li>
+                                <li><i class="fa-solid fa-check"></i> Internet Ilimitado</li>
+                                <li><i class="fa-solid fa-check"></i> Soporte Técnico</li>
+                            </ul>
+                            <!-- Botón para abrir el popup -->
+                            <button class="btn-contratar" onclick="abrirPopupProductoCarrier()">CONTRATAR AHORA</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paquete antena">
+                    <div class="card-wrap">
+                        <div class="card-front">
+                            <div class="card-header four">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="card-content">
+                                <h1 class="card-title">Plan Avanzado</h1>
+                                <p class="card-text">Máxima velocidad por antena. Ideal para gaming y hogares con muchos dispositivos.</p>
+                                <button class="card-btn four" onclick="voltearCard(this)">Ver más</button>
+                           </div>
+                        </div>
+                        <div class="card-back four">
+                            <div class="card-content">
+                            <h3>Plan <br><i>Avanzado</i></h3>
+                            <div class="price">$600.00 MXN</div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 50 Mbps (Descarga)</li>
+                                <li><i class="fa-solid fa-check"></i> 10 Mbps (Subida)</li>
+                                <li><i class="fa-solid fa-check"></i> Internet Ilimitado</li>
+                                <li><i class="fa-solid fa-check"></i> Soporte Técnico</li>
+                            </ul>
+                            <!-- Botón para abrir el popup -->
+                            <button class="btn-contratar" onclick="abrirPopupProductoCarrier()">CONTRATAR AHORA</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="tab-btn"><h3><i class="fa-solid fa-wifi"></i> FIBRA OPTICA</h3></button>
+            </div>
+            <div class="paquetes">
+                <!-- Paquetes de Fibra Óptica -->
+                <div class="paquete fibra">
+                    <div class="card-wrap">
+                        <div class="card-front">
+                            <div class="card-header five">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="card-content">
+                                <h1 class="card-title">Plan Básico</h1>
+                                <p class="card-text">Conexión rápida y estable para uso diario. Ideal para navegación básica.</p>
+                                <br>
+                                <button class="card-btn five" onclick="voltearCard(this)">Ver más</button>
+                           </div>
+                        </div>
+                        <div class="card-back five">
+                            <div class="card-content">
+                            <h3>Plan <br><i>Básico</i></h3>
+                            <div class="price">$300.00 MXN</div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 30 Mbps (Descarga)</li>
+                                <li><i class="fa-solid fa-check"></i> 30 Mbps (Subida)</li>
+                                <li><i class="fa-solid fa-check"></i> Internet Ilimitado</li>
+                                <li><i class="fa-solid fa-check"></i> Soporte Técnico</li>
+                            </ul>
+                            <!-- Botón para abrir el popup -->
+                            <button class="btn-contratar" onclick="abrirPopupProductoCarrier()">CONTRATAR AHORA</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paquete fibra">
+                    <div class="card-wrap">
+                        <div class="card-front">
+                            <div class="card-header six">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <h1 class="card-title">Plan Intermedio</h1>
+                                <p class="card-text">Velocidad para streaming en HD y descargas rápidas. Perfecto para hogares pequeños.</p>
+                                <button class="card-btn six" onclick="voltearCard(this)">Ver más</button>
+                           </div>
+                        </div>
+                        <div class="card-back six">
+                            <div class="card-content">
+                            <h3>Plan <br><i>Intermedio</i></h3>
+                            <div class="price">$350.00 MXN</div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 40 Mbps (Descarga)</li>
+                                <li><i class="fa-solid fa-check"></i> 40 Mbps (Subida)</li>
+                                <li><i class="fa-solid fa-check"></i> Internet Ilimitado</li>
+                                <li><i class="fa-solid fa-check"></i> Soporte Técnico</li>
+                            </ul>
+                            <!-- Botón para abrir el popup -->
+                            <button class="btn-contratar" onclick="abrirPopupProductoCarrier()">CONTRATAR AHORA</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paquete fibra">
+                    <div class="card-wrap">
+                        <div class="card-front">
+                            <div class="card-header seven">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="card-content">
+                                <h1 class="card-title">Plan Experto</h1>
+                                <p class="card-text">Potencia para múltiples dispositivos. Ideal para streaming en 4K y gaming.</p>
+                                <br>
+                                <button class="card-btn seven" onclick="voltearCard(this)">Ver más</button>
+                           </div>
+                        </div>
+                        <div class="card-back seven">
+                            <div class="card-content">
+                            <h3>Plan <br><i>Experto</i></h3>
+                            <div class="price">$400.00 MXN</div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 60 Mbps (Descarga)</li>
+                                <li><i class="fa-solid fa-check"></i> 60 Mbps (Subida)</li>
+                                <li><i class="fa-solid fa-check"></i> Internet Ilimitado</li>
+                                <li><i class="fa-solid fa-check"></i> Soporte Técnico</li>
+                            </ul>
+                            <!-- Botón para abrir el popup -->
+                            <button class="btn-contratar" onclick="abrirPopupProductoCarrier()">CONTRATAR AHORA</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paquete fibra">
+                    <div class="card-wrap">
+                        <div class="card-front">
+                            <div class="card-header eight">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="card-content">
+                                <h1 class="card-title">Plan Avanzado</h1>
+                                <p class="card-text">La mejor velocidad de fibra. Perfecto para gaming profesional y hogares conectados.</p>
+                                <button class="card-btn eight" onclick="voltearCard(this)">Ver más</button>
+                           </div>
+                        </div>
+                        <div class="card-back eight">
+                            <div class="card-content">
+                            <h3>Plan <br><i>Avanzado</i></h3>
+                            <div class="price">$550.00 MXN</div>
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 100 Mbps (Descarga)</li>
+                                <li><i class="fa-solid fa-check"></i> 100 Mbps (Subida)</li>
+                                <li><i class="fa-solid fa-check"></i> Internet Ilimitado</li>
+                                <li><i class="fa-solid fa-check"></i> Soporte Técnico</li>
+                            </ul>
+                            <!-- Botón para abrir el popup -->
+                            <button class="btn-contratar" onclick="abrirPopupProductoCarrier()">CONTRATAR AHORA</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pop-up -->
+            <div id="popup-producto-index" class="popup-producto">
+                <div class="popup-producto-contenido">
+                    <span class="cerrar-producto" onclick="cerrarPopupProductoCarrier()"><i class="fa-solid fa-circle-xmark"></i></span>
+                    <h3>Contáctanos</h3>
+                    <div class="opciones-producto">
+                        <a href="https://wa.me/2383742128" target="_blank" class="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+522381686473" class="telefono">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- LLAMADA -->
+    <div>
+        <!--Llama-->
+        <div class="llamada-wrapper">
+            <div class="llamada">
+                <div class="left">
+                    <animated-icons src="https://animatedicons.co/get-icon?name=Calling%20V3&style=minimalistic&token=66ff3706-138c-41fa-a993-dee03566e48c" trigger="loop" attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}' height="150" width="150"></animated-icons>
+                   
+                    <h4>¿Listo para conectarte?</h4>
+                    <p> Estamos aquí para ayudarte. ¡Contáctanos hoy mismo!</p>
+                </div>
+                <div class="right">
+                    <h2>CONTRATA EN LÍNEA</h2>
+                    <input type="text" id="name" placeholder="Ingresa tu nombre" oninput="validateForm()" required>
+                    <input type="tel" id="phone" placeholder="Ingresa tu número telefónico" oninput="validateForm()" required>
+                    <button id="callButton" onclick="submitForm()" disabled><h5><i class="fa-solid fa-phone-volume"></i> Llamenme</h5></button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Pop-up -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <p>Nosotros nos contactaremos contigo lo antes posible.</p>
+                <button onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- CONTACTO -->
+    <div class="content-container">
+        <h1 class="tit">¿NECESITAS AYUDA?</h1>
+        <p class="subtitle">Si necesitas más información, no dudes en contactarnos por telefono o visitarnos en nuestras oficinas. ¡Estamos para ayudarte!</p>
+    
+        <div class="info-line section">
+            <div class="info-section">
+                <img loading="lazy" class="no-select" src="img/Clock.png" class="clock" width="30" alt="">
+                <h2>Horario de atención</h2>
+                <p><i class="fa-solid fa-location-dot"></i> Av. San Antonio No. 14, Colonia Centro, San Antonio Texcala, Puebla, CP. 75875
+                Lunes a viernes: <br>
+                    <i class="fa-solid fa-clock"></i> 09:00 a.m. - 09:00 p.m.<br>
+                Sábado: <br><i class="fa-solid fa-clock"></i> 09:00 a.m. - 12:00 p.m.</p>
+            </div>
+    
+            <div class="logo-container">
+                <img loading="lazy" class="no-select" src="img/LogoV2.png" alt="Logo de la empresa" class="logo" >
+            </div>
+    
+            <div class="info-section">
+                <img loading="lazy" class="no-select" src="img/Soporte.png" class="soporte" width="30"  alt="">
+                <h2>Soporte telefónico</h2>
+                <p>Soporte telefonico a dudas y fallas en nuestro servicio</p>
+                <p><a href="tel:228-186-64-73"><i class="fa-solid fa-phone"></i> 238-168-64-73</a><br>
+                <a href="tel:228-468-31-12"><i class="fa-solid fa-phone"></i> 238-408-31-12</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- BANNER ANUNCIO CARRIER -->
+    <div class="contenedor-seguro-carrier">
+        <div class="banner-combinado">
+            <div class="contenido-banner">
+                <h2>¡Conecta tu empresa al futuro!</h2>
+                <p>Servicios de Carrier, Internet Dedicado y Soluciones Empresariales.</p>
+                <button class="btn-contacto-carrier" onclick="mostrarPopupCarrier()">Saber más</button>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="img/CARRIER.webp" alt="Soluciones empresariales">
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup-overlay-carrier" id="popup-overlay-carrier">
+        <div class="popup-overlay-2-carrier">
+            <h3>¡Estamos aquí para ayudarte!</h3>
+            <a href="tel:+522381686473"><i class="fa-solid fa-phone-volume"></i> Llamada: 238-168-64-73</a>
+            <a href="mailto:tecnologías.fem.mx@gmail.com"><i class="fa-solid fa-envelope"></i> Correo: tecnologías.fem.mx@gmail.com</a>
+            <a href="https://wa.me/2383742128"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 238-374-21-28</a>
+            <button class="btn-cerrar-carrier" onclick="cerrarPopupCarrier()">Cerrar</button>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Logo principal a la izquierda -->
+            <div class="footer-logo">
+                <a href="index.html"><img loading="lazy" src="img/Logo11.png" alt="Logo" class="logo-img"></a> <!-- Cambia "ruta/al/logo.png" por la ruta de tu logo -->
+            </div>
+            <!-- Contenido del footer a la derecha -->
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <a href="PROFECO_FEM.pdf" target="_blank" rel="noopener noreferrer"><h3>CARTA DE DERECHOS COMO USUARIO</h3></a>
+                    <a href="IFIT_FEM.pdf" target="_blank"><h3>CONCESIÓN UNICA</h3></a>
+                    <a href="CÓDIGO-DE-PRÁCTICA-COMERCIAL.pdf" target="_blank"><h3>CÓDIGO DE PRÁCTICA COMERCIAL</h3></a>
+                    <a href="Aviso.html"><h3>AVISO DE PRIVACIDAD</h3></a>
+                </div>
+                <div class="footer-column">
+                    <a href="empresa.html"><h3>ACERCA DE NOSOTROS</h3></a>
+                    <a href="cobertura.html"><h3>MAPA DE COBERTURA</h3></a>
+                    <a href="https://www.gob.mx/profeco"><h3>PROCUPADURÍA FEDERAL DEL CONSUMIDOR</h3></a>
+                    <a href="https://www.ift.org.mx/"><h3>INSTITUTO FEDERAL DE TELECOMUNICACIONES</h3></a>
+                </div>
+            </div>
+        </div>
+        <!-- Logos pequeños debajo de las últimas dos columnas -->
+        <div class="small-logos">
+            <a href="https://www.gob.mx/profeco"><img loading="lazy" class="no-select" src="img/profeco.png" alt="Logo 1" class="small-logo profeco"></a> <!-- Cambia "ruta/al/logo1.png" por la ruta de tu logo -->
+            <a href="https://www.ift.org.mx/"><img loading="lazy" class="no-select" src="img/ifit.png" alt="Logo 2" class="small-logo ifit"></a> <!-- Cambia "ruta/al/logo2.png" por la ruta de tu logo -->
+        </div>
+        <!-- Pie de footer -->
+        <div class="footer-bottom">
+            <p>2025 InterFEM. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
